@@ -4,12 +4,13 @@ a Binary operations helper written in Haskell, for standalone use or add via FFI
 
 How to Use
 Import the Library:
-
+```
 haskell
 Copy
 import BinaryOperationHelper
 Test a Binary Operation (for example, addition on integers):
-
+```
+```
 haskell
 Copy
 main :: IO ()
@@ -21,6 +22,6 @@ main = do
   print $ hasIdentity op sampleValues        -- Likely True (0 is identity for addition)
   print $ identityElement op sampleValues    -- Should be Just 0
   print $ isIdempotent op sampleValues       -- False for addition
-  
+```  
 Extend or Embed: You can wrap these functions in your own higher‐level code or even expose them to C++ via Haskell’s FFI if needed.
 
